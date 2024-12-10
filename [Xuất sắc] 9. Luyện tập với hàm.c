@@ -100,7 +100,7 @@ void arrPrime(int arr[100][100], int n) {
 int main() {
     int arr[100][100];
     int menu;
-    int n;
+    int n = 0;
     do {
         printf("1.Nhập giá trị các phần tử của mảng\n");
         printf("2.In giá trị các phần tử của mảng theo ma trận\n");
@@ -118,18 +118,33 @@ int main() {
                 arrInput(arr, n);
                 break;
             case 2:
+                if(n == 0) {
+                    printf("Chua nhap mang: \n");
+                }
                 arrPrint(arr, n);
                 break;
             case 3:
+                if(n == 0) {
+                    printf("Chua nhap mang: \n");
+                }
                 arrPrint1(arr, n);
                 break;
             case 4:
+                if(n == 0) {
+                    printf("Chua nhap mang: \n");
+                }
                 arrPrint2(arr, n);
                 break;
             case 5:
+                if(n == 0) {
+                    printf("Chua nhap mang: \n");
+                }
                 arrPrint3(arr, n);
                 break;
             case 6:
+                if(n == 0) {
+                    printf("Chua nhap mang: \n");
+                }
                 arrPrime(arr, n);
                 break;
         }
